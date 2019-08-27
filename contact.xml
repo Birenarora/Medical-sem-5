@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="my-style.css"?>
+<enquiry>
+	<name><![CDATA[<br />Vilas N. Patil]]></name>
+	<address><![CDATA[<br />Rudra Medico<br />
+			 Shop No. 4, Devki's Park View<br />
+			 Plot No. 185, Sec-10, Kharghar<br />
+			 Navi Mumbai - 410210]]>
+	</address>
+	<phone><![CDATA[<br />8828808222<br />]]></phone>
+	<email><![CDATA[<br />rudramedico@gmail.com<br />]]></email>
+	<website><![CDATA[<br />www.xyz.com]]></website>
+</enquiry>

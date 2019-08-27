@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rudra Medico</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  .bs-example{
+    margin: 20px;
+}
+</style>
+
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<body style="background-color: #C9FFBF;">
+<br>
+<section id="contact">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <form method="POST" action="https://formspree.io/biren.arora16@siesgst.ac.in" name="sentMessage" id="contactForm" novalidate>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <table width="100%" cellpadding="5" cellspacing="3" border="0" align="center">
+                                <tbody>
+                                    <tr>
+                                        <th style="border:none; margin:5px 5px ; padding:0px; text-align:left; " width="10%" valign="top" align="left">Your Name</th>
+                                        <td style="border:none; margin:5px 5px ; padding:0px; text-align:left;" width="30%" valign="top" align="left"><input type="text" class="form-control" name="name" id="name" required data-validation-required-message="Please enter your name.">
+                                            <p class="help-block text-danger"></p></td>
+                                            <tr>
+                                                <th style="border:none; margin:5px 5px ; padding:0px; text-align:left; " width="10%" valign="top" align="left">Your Email</th>
+                                                <td style="border:none; margin:5px 5px ; padding:0px; text-align:left;" width="30%" valign="top" align="left"><input type="email" class="form-control" name="email" id="email" required data-validation-required-message="Please enter your email address.">
+                                                    <p class="help-block text-danger"></p></td></tr>
+
+                                                    <tr>
+                                                <th style="border:none; margin:5px 5px ; padding:0px; text-align:left; " width="10%" valign="top" align="left">Your Phone</th>
+                                                <td style="border:none; margin:5px 5px ; padding:0px; text-align:left;" width="30%" valign="top" align="left"><input type="tel" class="form-control" name="phone" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                                        <p class="help-block text-danger"></p></td></tr>
+                                                    
+                                                    <tr>
+                                                        <th style="border:none; margin:5px 5px ; padding:0px; text-align:left; " width="10%" valign="top" align="left">Address</th>
+                                                <td style="border:none; margin:5px 5px ; padding:0px; text-align:left;" width="30%" valign="top" align="left"><textarea class="form-control" name="address" id="address" required data-validation-required-message="Please enter your address" cols="40" rows="5"></textarea>
+                                    <p class="help-block text-danger"></p></td></tr>
+                                    <tr><th style="border:none; margin:5px 5px ; padding:0px; text-align:left; " width="10%" valign="top" align="left">Upload Prescription</th><td style="border:none; margin:5px 5px ; padding:0px; text-align:left;" width="30%" valign="top" align="left"><input type="file" name="fileupload" value="fileupload" id="fileupload"></td></tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <table width="100%" cellpadding="5" cellspacing="3" border="0" align="center">
+                                            <tbody>
+                                                <tr>
+                                                    <th style="border:none; margin:5px 5px ; padding:0px; text-align:left; " width="10%" valign="top" align="left">Country</th>
+                                                    <td style="border:none; margin:5px 5px ; padding:0px; text-align:left;" width="30%" valign="top" align="left"><input type="text" class="form-control" name="country" id="country" required data-validation-required-message="Please enter your country">
+                                                        <p class="help-block text-danger"></p></td></tr>
+                                                        <tr>
+                                                            <th style="border:none; margin:5px 5px ; padding:0px; text-align:left; " width="10%" valign="top" align="left">City</th>
+                                                    <td style="border:none; margin:5px 5px ; padding:0px; text-align:left;" width="30%" valign="top" align="left"><input type="text" class="form-control" name="city" id="city" required data-validation-required-message="Please enter your city">
+                                                        <p class="help-block text-danger"></p></td></tr>
+                                                        <tr>
+                                                            <th style="border:none; margin:5px 5px ; padding:0px; text-align:left; " width="10%" valign="top" align="left">ZipCode</th>
+                                                    <td style="border:none; margin:5px 5px ; padding:0px; text-align:left;" width="30%" valign="top" align="left"><input type="text" class="form-control" name="zipcode" id="zipcode" required data-validation-required-message="Please enter your zipcode">
+                                                        <p class="help-block text-danger"></p></td></tr>
+                                                        <tr>
+                                                        <th style="border:none; margin:5px 5px ; padding:0px; text-align:left; " width="10%" valign="top" align="left">Your Message</th>
+                                                <td style="border:none; margin:5px 5px ; padding:0px; text-align:left;" width="30%" valign="top" align="left"><textarea class="form-control" name="message" id="message" required data-validation-required-message="Please enter a message." cols="40" rows="5"></textarea>
+                                    <p class="help-block text-danger"></p></td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="clearfix"></div>
+                <div class="col-lg-12 text-center">
+                    <div id="success"></div>
+                    <button type="submit" class="btn btn-dark">Send Message</button>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+</section>
+<!-- <footer class="bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <span class="copyright">Copyright &copy; Your Website 2016</span>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline social-buttons">
+                    <li><a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li><a href="#"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <ul class="list-inline quicklinks">
+                    <li><a href="#">Privacy Policy</a>
+                    </li>
+                    <li><a href="#">Terms of Use</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+ -->
+
+</body>
+</html>

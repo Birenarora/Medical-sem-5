@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Patient</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+  <h3>Patient inputs</h3>
+  <p>Kindly provide us with the details as per mentioned below.</p>
+  <form method="POST" action="patientinsert.php"> 
+
+       <div class="form-group">
+      <label for="cid">ID:</label>
+      <input type="number" class="form-control" placeholder="enter id" name="patid">
+    </div>
+      <div class="form-group">
+      <label for="cname">Name:</label>
+      <input type="name" class="form-control" placeholder="enter name" name="patname">
+    </div>
+       
+     
+    <div class="input-group">
+      <span class="input-group-addon">Address:</span>
+      <input type="text" class="form-control" placeholder="Address" name="patadd">
+    </div>
+
+    <div class="form-group">
+      <label for="ccontact">Phone_no:</label>
+      <input type="number" class="form-control" placeholder="enter phone.no" name="patcontact">
+    </div><br>
+    <input type="submit" name="submit" value="Submit">
+   </form>
+  <br>
+</body>
+</html>

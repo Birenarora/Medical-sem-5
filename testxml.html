@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+	<div id="demo"></div>
+<script>
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                    myFunction(this);
+                }
+            };
+            xhttp.open("GET", "contact.xml", true);
+            xhttp.send();
+
+            function myFunction(xml) {
+                var xmlDoc = xml.responseXML;
+                var x;    
+                var txt;
+
+                txt = "<img src='Contact-Person.png'><strong style='color: #0067ac;'>Contact Person :</strong>" + "<br>";
+                x = xmlDoc.getElementsByTagName("name")[0].childNodes[0];
+                txt += "<strong>"+ x.nodeValue +"</strong>" + "<br>";
+                
+                txt += "<img src='address-icon.png'><strong style='color: #0067ac;'>Address :</strong>" + "<br>"
+                x = xmlDoc.getElementsByTagName("address")[0].childNodes[0];
+                txt += "<strong>"+ x.nodeValue +"</strong>" + "<br>";    
+
+                txt += "<img src='phone-icon.png'><strong style='color: #0067ac;'>Phone :</strong>" + "<br>"
+                x = xmlDoc.getElementsByTagName("phone")[0].childNodes[0];
+                txt += "<strong>"+ x.nodeValue +"</strong>" + "<br>";
+
+                txt += "<img src='email-icon.png'><strong style='color: #0067ac;'>Email :</strong>" + "<br>"
+                x = xmlDoc.getElementsByTagName("email")[0].childNodes[0];
+                txt += "<strong>"+ x.nodeValue +"</strong>" + "<br>";
+
+                txt += "<img src='website-icon.png'><strong style='color: #0067ac;'>Wesbite :</strong>" + "<br>"
+                x = xmlDoc.getElementsByTagName("website")[0].childNodes[0];
+                txt += "<strong>"+ x.nodeValue +"</strong>" + "<br>";
+
+                document.getElementById("demo").innerHTML = txt;
+            }
+        </script>
+</body>
+</html>
